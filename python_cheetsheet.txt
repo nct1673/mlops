@@ -27,6 +27,21 @@ nums1 = [1, 2, 3, 4, 5]
 greater3 = list(filter(lambda x: x > 3, nums1))
 print(greater3)
 
+*********************************************************************
+
+>> decorator (with example)
+def deco(func):
+    def sub(*args, **kwargs):
+        print("first line")
+        func(*args, **kwargs)
+        print("third line")
+    return sub
+
+@ deco
+def add(x, y):
+    print(f'the result is {x+y}')
+
+add(1, 2)
 
 
 
