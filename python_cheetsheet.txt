@@ -1,0 +1,58 @@
+>> lambda
+nums = [1, 2, 3, 4, 5]
+square_nums = [(lambda x: x**2) (i) for i in nums]
+
+or
+
+sq = lambda x: x**2
+square_nums = [sq(i) for i in nums]
+
+*********************************************************************
+
+>> map(function, args)
+> single argument
+nums = [1, 2, 3, 4, 5]
+sq = lambda x: x**2
+print(list(map(sq, nums)))
+
+> multiple arguments
+nums1 = [1, 2, 3, 4, 5]
+nums2 = [i*2 for i in nums1]
+print(list(map(lambda x,y: x+y, nums1, nums2)))
+
+*********************************************************************
+
+>> filter
+nums1 = [1, 2, 3, 4, 5]
+greater3 = list(filter(lambda x: x > 3, nums1))
+print(greater3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
